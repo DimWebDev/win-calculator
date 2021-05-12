@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Winner Calculator</title>
+    <link rel="stylesheet" type="text/css" href="win.css">
+    <style>
+    	.winner {
+    		color: green;
+    	}
+    	.loser {
+    		color: red;
+    	}
+    </style>
+</head>
+<body>
+<div>
+	<h1><span id="p1Display">0</span> to <span id="p2Display">0</span></h1> <!-- We use span to single out a piece of content -->
+	<select id="playUntil">
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>
+
+<!-- We have to make sure that when we select a value
+	this value is set as the new winning score-->
+
+	</select>
+
+	<button id="p1Btn">+ 1 Player One</button>
+	<button id="p2Btn">+ 1 Player Two</button>
+	<button id="reset">reset</button>
+</div>
+<script src="win calculator.js"></script>
+</body>
+</html>
